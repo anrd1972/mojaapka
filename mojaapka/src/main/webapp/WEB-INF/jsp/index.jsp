@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
 <title>Strona głowna</title>
 </head>
 <body>
-Cześć
+<a href="/register">Rejestracja</a><br/>
+<a href="/login">Logowanie</a>
 </body>
 </html>
