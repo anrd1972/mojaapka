@@ -1,5 +1,8 @@
 package anra.mojaapka.models;
-
+/**
+ * @author Andrzej Radziejewski
+ * @since 0.1
+ */
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

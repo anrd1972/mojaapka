@@ -1,5 +1,8 @@
 package anra.mojaapka.config;
 
+/**
+ * @author Andrzej Radziejewski
+ */
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;

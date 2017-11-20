@@ -1,5 +1,8 @@
 package anra.mojaapka.service.impl;
-
+/**
+ * @author Andrzej Radziejewski
+ * @since 0.1
+ */
 import java.util.Arrays;
 import java.util.HashSet;
 

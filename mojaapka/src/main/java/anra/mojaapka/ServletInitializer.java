@@ -1,5 +1,8 @@
 package anra.mojaapka;
 
+/**
+ * @author Andrzej Radziejewski
+ */
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 

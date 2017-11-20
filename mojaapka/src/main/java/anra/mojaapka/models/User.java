@@ -1,5 +1,8 @@
 package anra.mojaapka.models;
-
+/**
+ * @author Andrzej Radziejewski
+ * @since 0.1
+ */
 import java.util.Set;
 
 import javax.persistence.CascadeType;

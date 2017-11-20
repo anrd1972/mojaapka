@@ -1,5 +1,8 @@
 package anra.mojaapka.controllers;
-
+/**
+ * @author Andrzej Radziejewski
+ * @since 0.1
+ */
 import javax.validation.Valid;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
