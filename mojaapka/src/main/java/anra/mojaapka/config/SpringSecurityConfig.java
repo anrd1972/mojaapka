@@ -65,6 +65,6 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 	public void configure(WebSecurity webSec) throws Exception {
 		
 		webSec.ignoring()
-		.antMatchers("/resources/**", "/statics/**", "/css/**", "/js/**", "/images/**");
+		.antMatchers("/resources/**", "/statics/**", "/css/**", "/js/**", "/images/**", "/incl/**");
 	}
 }

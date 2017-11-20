@@ -39,3 +39,22 @@ input {
 .formButton:hover {
 	  border: 1px solid red;
 }
+
+.tableMenuBg {
+	background-color: #c6d5d9;
+	border-radius: 6px;
+}
+
+.tableMenuLink {
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #465151;
+}
+
+.tableMenuLink:hover {
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #0080ff;
+}

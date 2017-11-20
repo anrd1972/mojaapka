@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
-<title>Rejestracja</title>
+<title><s:message code="page.title.register"/></title>
 </head>
 <body>
 
@@ -31,7 +31,7 @@
 			</tr>
 
 			<tr>
-				<td width="130" align="right">Nazwisko:</td>
+				<td width="130" align="right"><s:message code="register.lastName"/></td>
 				<td width="270" align="left"><sf:input path="lastName"
 						size="28" /></td>
 			</tr>
@@ -41,7 +41,7 @@
 			</tr>
 
 			<tr>
-				<td width="130" align="right" >Email:</td>
+				<td width="130" align="right" ><s:message code="register.email"/></td>
 				<td width="270" align="left"><sf:input path="email" size="28" /></td>
 			</tr>
 			<tr>
@@ -49,7 +49,7 @@
 			</tr>
 
 			<tr>
-				<td width="130" align="right" >Hasło:</td>
+				<td width="130" align="right" ><s:message code="register.password"/></td>
 				<td width="270" align="left"><sf:password path="password" size="28" /></td>
 			</tr>
 			<tr>
@@ -57,8 +57,9 @@
 			</tr>
 
 			<tr>
-				<td colspan="2" align="center" bgcolor="#fff"><input
-					type="submit" value="Zarejestruj" class="formButton"/>
+				<td colspan="2" align="center" bgcolor="#fff">
+					<input type="submit" value="<s:message code="register.button.register"/>" 
+						class="formButton"/>
 				</td>
 			</tr>
 
