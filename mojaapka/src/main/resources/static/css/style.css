@@ -41,7 +41,7 @@ input {
 }
 
 .tableMenuBg {
-	background-color: #c6d5d9;
+	background-color: #333a56;
 	border-radius: 6px;
 }
 
@@ -49,12 +49,19 @@ input {
 	font-size: 18px;
 	font-family: sans-serif;
 	font-weight: bold;
-	color: #465151;
+	color: #f0f0e6;
+	text-decoration: none;
 }
 
 .tableMenuLink:hover {
 	font-size: 18px;
 	font-family: sans-serif;
 	font-weight: bold;
-	color: #0080ff;
+	color: #E8E8E8;
+	text-decoration: underline;
 }
+
+/* #52658F ciekawy kolor
+	#E8E8E8
+	
+ */

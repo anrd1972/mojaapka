@@ -1,0 +1,16 @@
+<table width="1300" border="0" cellpadding="8" cellspacing="4" class="tableMenuBg">
+	<tr>
+		<td align="left" width="900">
+		<sec:authorize access="hasRole('ROLE_ADMIN')">
+			<a href="/admin/users" class="tableMenuLink"><s:message code="admin.menu.users"/></a>
+		</sec:authorize>
+		</td>
+		
+		<sec:authorize access="isAuthenticated()">
+		<td align="right">
+			<a href="/" class="tableMenuLink"><s:message code="page.title.back"/></a>&nbsp;
+			<a href="/logout" class="tableMenuLink"><s:message code="menu.all.logout"/></a>	
+		</sec:authorize>
+		</td>	
+	</tr>
+</table>
