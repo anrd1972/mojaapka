@@ -11,6 +11,7 @@
 </head>
 <body>
 
+<div style="margin-top: 15%; border: 1px; font-size: 16px;">
 	<form id="loginForm" action="/login" method="POST">
 
 		<table width="500" border="0" cellpadding="4" cellspacing="1"
@@ -39,6 +40,7 @@
 			Nieprawidłowy email lub hasło
 		</c:if>
 	</p>
+</div>
 
 </body>
 </html>
