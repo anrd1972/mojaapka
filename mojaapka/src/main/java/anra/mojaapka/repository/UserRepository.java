@@ -9,5 +9,7 @@ import anra.mojaapka.models.User;
 public interface UserRepository extends JpaRepository<User, Long> {
 
 	public User findByEmail(String email);
+	
+	public User findUserById(int id);
 
 }

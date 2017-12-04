@@ -14,8 +14,14 @@
 <div style="margin-top: 15%; border: 1px; font-size: 16px;">
 	<form id="loginForm" action="/login" method="POST">
 
-		<table width="500" border="0" cellpadding="4" cellspacing="1"
+		<table width="350" border="0" cellpadding="4" cellspacing="1"
 			align="center">
+			<tr>
+				<td colspan="2" class="header" align="center" valign="middle">
+					<img src="/resources/images/login.png">&nbsp;
+					<s:message code="page.title.login"/>
+				</td>
+			</tr>
 			<tr>
 				<td align="right" width="140"><s:message code="register.email"/></td>
 				<td align="left"><input type="text" name="email" id="email"

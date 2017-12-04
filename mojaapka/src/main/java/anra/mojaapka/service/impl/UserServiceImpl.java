@@ -35,10 +35,8 @@ public class UserServiceImpl implements UserService {
 	public void saveUser(User user) {
 		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         user.setActive(1);
-        
         Role userRole = roleRepository.findByRole("ROLE_USER");
         user.setRoles(new HashSet<Role>(Arrays.asList(userRole)));
-        
 		userRepository.save(user);
 	}
 
@@ -48,7 +46,17 @@ public class UserServiceImpl implements UserService {
 		userList = userRepository.findAll();
 		return userList;
 	}
-
 	
+	@Override
+	public User findUserById(int id) {
+		return userRepository.findUserById(id);
+	}
+
+	@Override
+	public void updateUser(String rola, User user) {
+		Role userRole = roleRepository.findByRole(rola);
+        user.setRoles(new HashSet<Role>(Arrays.asList(userRole)));
+		userRepository.save(user);
+	}
 
 }

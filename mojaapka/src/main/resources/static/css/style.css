@@ -1,5 +1,5 @@
 body {
-	font-family: Arial;
+	font-family: sans-serif;
 	font-weight: normal;
 	font-size: 14px;
 	color: #000000;
@@ -15,6 +15,12 @@ input {
 	height: 20px;
 	border: 1px solid gray;
     border-radius: 2px;	
+}
+
+form {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 14px;
 }
 
 .error{
@@ -61,7 +67,32 @@ input {
 	text-decoration: underline;
 }
 
-/* #52658F ciekawy kolor
-	#E8E8E8
-	
- */
+.tdUsersHead {
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #f0f0e6;
+	text-decoration: none;
+	background-color: #52658F;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.tableUsers {
+	border: 1px solid #52658F;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: rpx;
+}
+
+.tdUsers {
+	border: 1px solid #52658F;
+}
+
+.header {
+	font-size: 36px;
+	color: #52658F;
+	font-weight: bold;
+	font-style: italic;
+}

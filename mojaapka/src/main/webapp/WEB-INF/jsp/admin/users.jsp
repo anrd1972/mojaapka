@@ -13,36 +13,57 @@
 <body>
 <%@include file="/WEB-INF/incl/adminmenu.incl" %>
 
-<c:forEach var="u" items="${userList}">
-<p>
-	<s:message code="admin.users.id"/> <c:out value="${u.id }"></c:out><br/>
-	<s:message code="register.name"/> <c:out value="${u.name }"></c:out><br/>
-	<s:message code="register.lastName"/> <c:out value="${u.lastName }"></c:out><br/>
-	<s:message code="register.email"/> <c:out value="${u.email }"></c:out><br/>
-	<s:message code="admin.users.active"/> 
+<br/>
+<table width="1300" border="0" cellpadding="6" cellspacing="0" class="tableUsers">
+	<tr class="tdUsersHead ">
+		<td width="20" align="center"><s:message code="admin.users.id"/></td>
+		<td width="200" align="center"><s:message code="register.name"/></td>
+		<td width="200" align="center"><s:message code="register.lastName"/></td>
+		<td width="200" align="center"><s:message code="register.email"/></td>
+		<td width="90" align="center"><s:message code="admin.users.active"/></td>
+		<td width="200" align="center"><s:message code="admin.users.role"/></td>
+		<td width="340" align="center"><s:message code="admin.users.akcje"/></td>
+	<tr>
+
+	<c:forEach var="u" items="${userList}">
+		<tr>
+		<td class="tdUsers"><c:out value="${u.id }"/></td>
+		<td class="tdUsers"><c:out value="${u.name }"/></td>
+		<td class="tdUsers"><c:out value="${u.lastName }"/></td>
+		<td class="tdUsers"><c:out value="${u.email }"/></td>
+		<td class="tdUsers" align="center"> 
 	
-	<c:choose>
-		<c:when test="${u.active == 1 }">
-			<font color="green"><s:message code="admin.users.active.yes"/></font><br/>
-		</c:when>
-		<c:otherwise>
-			<font color="red"><s:message code="admin.users.active.no"/></font><br/>
-		</c:otherwise>
-	</c:choose>
-	
-	<s:message code="admin.users.role"/> 
-	<c:choose>
-		<c:when test="${u.rolaInt == 1}">
-			<s:message code="admin.users.role.admin"/><br/>
-		</c:when>
-		<c:otherwise>
-			<s:message code="admin.users.role.user"/><br/>
-		</c:otherwise>
-	</c:choose>
-	
-</p>
+			<c:choose>
+				<c:when test="${u.active == 1 }">
+					<font color="green"><s:message code="admin.users.active.yes"/></font><br/>
+				</c:when>
+				<c:otherwise>
+					<font color="red"><s:message code="admin.users.active.no"/></font><br/>
+				</c:otherwise>
+			</c:choose>
+		</td>
+		<td class="tdUsers" align="center">
+			<c:choose>
+				<c:when test="${u.rolaInt == 1}">
+					<font color="#ea3500"><b>
+						<s:message code="admin.users.role.admin"/>
+					</b></font>
+				</c:when>
+				<c:otherwise>
+					<s:message code="admin.users.role.user"/><br/>
+				</c:otherwise>
+			</c:choose>
+		</td>
+		
+		<td class="tdUsers">
+			<input type="button"
+						onclick="window.location.href='${pageContext.request.contextPath}/admin/edit/${u.id}'" 
+						value="<s:message code="button.edit"/>"/>
+		</td>
+	</tr>
 </c:forEach>
 
+</table>
 
 </body>
 </html>

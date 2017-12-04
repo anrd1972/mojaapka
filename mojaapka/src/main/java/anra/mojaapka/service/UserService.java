@@ -12,5 +12,9 @@ public interface UserService {
 	public void saveUser(User user);
 
 	public List<User> findAll();
+	
+	public User findUserById(int id);
+	
+	public void updateUser(String rola, User user);
 
 }
