@@ -8,7 +8,7 @@
 		
 		<sec:authorize access="isAuthenticated()">
 		<td align="right">
-			<a href="/admin/main" class="tableMenuLink"><s:message code="page.title.back"/></a>&nbsp;
+			<a href="/" class="tableMenuLink"><s:message code="page.title.back"/></a>&nbsp;
 			<a href="/logout" class="tableMenuLink"><s:message code="menu.all.logout"/></a>	
 		</sec:authorize>
 		</td>	

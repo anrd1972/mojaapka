@@ -49,8 +49,13 @@
 						<s:message code="admin.users.role.admin"/>
 					</b></font>
 				</c:when>
+				<c:when test="${u.rolaInt == 2}">
+					<b><s:message code="admin.users.role.user"/></b>
+				</c:when>
 				<c:otherwise>
-					<s:message code="admin.users.role.user"/><br/>
+				<font color="#00aa00">
+					<b><s:message code="admin.users.role.sale"/></b>
+				</font>
 				</c:otherwise>
 			</c:choose>
 		</td>

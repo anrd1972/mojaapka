@@ -4,6 +4,9 @@
 		<sec:authorize access="hasRole('ROLE_ADMIN')">
 			<a href="/admin/main" class="tableMenuLink"><s:message code="menu.admin.administrator"/></a>
 		</sec:authorize>
+		<sec:authorize access="hasRole('ROLE_ADMIN') or hasRole('ROLE_SALE')">
+			&nbsp;&nbsp;<a href="/zamowienia" class="tableMenuLink"><s:message code="zamowienia.page.title"/></a>
+		</sec:authorize>
 		</td>
 		
 		<td align="right">

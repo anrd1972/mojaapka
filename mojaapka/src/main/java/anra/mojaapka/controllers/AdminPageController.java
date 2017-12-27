@@ -76,8 +76,10 @@ public class AdminPageController {
 
 		if (user.getRolaInt() == 1) {
 			rola = "ROLE_ADMIN";
-		} else {
+		} else if (user.getRolaInt() == 2) {
 			rola = "ROLE_USER";
+		} else {
+			rola = "ROLE_SALE";
 		}
 
 		if (result.hasErrors()) {
@@ -120,6 +122,7 @@ public class AdminPageController {
 		Map<Integer, String> roleMap = new HashMap<Integer, String>();
 		roleMap.put(1, "Administrator");
 		roleMap.put(2, "Użytkownik");
+		roleMap.put(3, "Sprzedawca");
 		return roleMap;
 	}
 
