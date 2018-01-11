@@ -4,7 +4,6 @@ import java.util.List;
 
 import anra.mojaapka.models.User;
 
-
 public interface UserService {
 
 	public User findUserByEmail(String email);

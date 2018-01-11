@@ -14,4 +14,5 @@ public class MojaapkaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MojaapkaApplication.class, args);
 	}
+
 }
