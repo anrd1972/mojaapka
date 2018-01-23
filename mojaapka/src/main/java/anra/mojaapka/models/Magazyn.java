@@ -18,6 +18,7 @@ public class Magazyn {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
+	@NotNull
 	private int id;
 	
 	@Column(name = "id_zamowienia")

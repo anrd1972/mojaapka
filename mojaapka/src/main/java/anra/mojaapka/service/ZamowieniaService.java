@@ -7,5 +7,7 @@ import anra.mojaapka.models.Zamowienia;
 public interface ZamowieniaService {
 	
 	public List<Zamowienia> findAll();
+	
+	public void saveZamowienia(Zamowienia zamowienia);
 
 }
