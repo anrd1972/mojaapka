@@ -27,6 +27,7 @@
 		</tr>
 	</table>
 	<br/>
+   
 	<table width="1300" border="0" cellpadding="6" cellspacing="0" class="tableZamowienia">
 	
 	<tr class="tdUsersHead ">
@@ -52,5 +53,19 @@
 		</tr>
 	</c:forEach>
 	</table>
+	<p align="right">
+		<c:if test="${currentPage > 0 }">
+			<input type="button"
+				class="formButton2" 
+				onclick="window.location.href='${pageContext.request.contextPath}/zamowienia/${currentPage-1}'"
+				value="<s:message code="link.poprzedni"/>" />&nbsp;&nbsp;
+		</c:if>
+		<c:if test="${currentPage < totalPages-1 }">
+			<input type="button"
+				class="formButton2" 
+				onclick="window.location.href='${pageContext.request.contextPath}/zamowienia/${currentPage+1}'"
+				value="<s:message code="link.nastepny"/>" />
+		</c:if>
+	</p>
 </body>
 </html>

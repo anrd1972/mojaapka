@@ -3,6 +3,8 @@ package anra.mojaapka.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,8 +26,7 @@ public class ZamowieniaServiceImpl implements ZamowieniaService {
 
 	@Override
 	public List<Zamowienia> findAll() {
-		List<Zamowienia> zamowieniaList = null;
-		zamowieniaList = zamowieniaRepository.findAll();
+		List<Zamowienia> zamowieniaList = zamowieniaRepository.findAll();
 		return zamowieniaList;
 	}
 
@@ -42,6 +43,12 @@ public class ZamowieniaServiceImpl implements ZamowieniaService {
 		magazyn.setOsoba("Andrzej");
 		
 		magazynRepository.save(magazyn);
+	}
+
+	@Override
+	public Page<Zamowienia> findAllPages(Pageable pageable) {
+		Page<Zamowienia> pages = zamowieniaRepository.findAll(pageable);
+		return pages;
 	}
 
 }
